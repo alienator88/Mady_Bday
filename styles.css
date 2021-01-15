@@ -22,6 +22,7 @@
       Cantarell, 
       "Helvetica Neue", 
       sans-serif;
+      overflow: hidden;
   }
   
   .container {
