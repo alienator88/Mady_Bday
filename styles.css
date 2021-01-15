@@ -87,3 +87,8 @@
     top: 50%;
     transform: translate(-50%, -50%);  
   }
+
+  canvas{
+    background:#a50404;
+    background-color: #a50404;
+  }
