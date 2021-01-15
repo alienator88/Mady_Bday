@@ -1,3 +1,7 @@
+function play() {
+  document.getElementById("my_audio").play();
+}
+
 (function () {
     const second = 1000,
           minute = second * 60,

@@ -89,7 +89,11 @@
     transform: translate(-50%, -50%);  
   }
 
-  canvas{
-    background:#a50404;
-    background-color: #a50404;
-  }
+.audiobtn {
+  background: none;
+  border: none;
+  position: absolute;
+    left: 1%;
+    top: 1%;
+    transform: translate(-1%, -1%);  
+}
