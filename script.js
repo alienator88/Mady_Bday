@@ -1,6 +1,6 @@
     var time = 1199;
     startTimer(time);
-    
+     
     function startTimer(duration) {
       var timer = duration, minutes, seconds;
       var count = setInterval(function () {
