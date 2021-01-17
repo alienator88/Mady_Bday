@@ -1,12 +1,12 @@
 function off() {
   document.getElementById("overlay").style.display = "none";
-  addYt();
+  addMusic();
 }
 
-function addYt() {
-  document.querySelector('#yt').insertAdjacentHTML(
+function addMusic() {
+  document.querySelector('#content').insertAdjacentHTML(
     'afterbegin',
-    `<audio autoplay>
+    `<iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe><audio autoplay>
   <source src="hbd.ogg" type="audio/ogg">
   </audio>`
   )
@@ -37,14 +37,12 @@ function addYt() {
         let headline = document.getElementById("headline"),
           countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
-        yt = document.getElementById("yt");
 
         headline.innerText = "Happy Birthday Mady!!!";
         countdown.style.display = "none";
         content.style.display = "block";
-        yt.style.display = "block";
         startFW();
-        //addYt();
+        //addMusic();
 
         clearInterval(x);
       }
