@@ -1,34 +1,11 @@
-function off() {
-  document.getElementById("overlay").style.display = "none";
-  music = document.getElementById("music");
-  music.play();
-}
-
-function addMusic2() {
-  document.querySelector('#content').insertAdjacentHTML(
-    'afterbegin',
-    `<audio autoplay>
-  <source src="hbd.ogg" type="audio/ogg">
-  </audio>`
-  )
-}
-
-function addMusic() {
-  music = document.getElementById("")
-    'afterbegin',
-    `<audio autoplay>
-  <source src="hbd.ogg" type="audio/ogg">
-  </audio>`
-}
-
 (function () {
   const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
 
-  //let birthday = "Jan 25, 2021 14:20:00",
-  let birthday = "Jan 17, 2021 12:59:00",
+  let birthday = "Jan 25, 2021 14:20:00",
+  //let birthday = "Jan 17, 2021 12:59:00",
 
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
@@ -51,7 +28,6 @@ function addMusic() {
         countdown.style.display = "none";
         content.style.display = "block";
         startFW();
-        //addMusic();
 
         clearInterval(x);
       }
