@@ -1,15 +1,24 @@
 function off() {
   document.getElementById("overlay").style.display = "none";
-  addMusic();
+  music = document.getElementById("music");
+  music.play();
 }
 
-function addMusic() {
+function addMusic2() {
   document.querySelector('#content').insertAdjacentHTML(
     'afterbegin',
-    `<iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe><audio autoplay>
+    `<audio autoplay>
   <source src="hbd.ogg" type="audio/ogg">
   </audio>`
   )
+}
+
+function addMusic() {
+  music = document.getElementById("")
+    'afterbegin',
+    `<audio autoplay>
+  <source src="hbd.ogg" type="audio/ogg">
+  </audio>`
 }
 
 (function () {
