@@ -1,3 +1,8 @@
+function off() {
+  document.getElementById("overlay").style.display = "none";
+  addYt();
+}
+
 function addYt() {
   document.querySelector('#yt').insertAdjacentHTML(
     'afterbegin',
@@ -13,8 +18,8 @@ function addYt() {
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "Jan 25, 2021 14:20:00",
-  //let birthday = "Jan 17, 2021 12:59:00",
+  //let birthday = "Jan 25, 2021 14:20:00",
+  let birthday = "Jan 17, 2021 12:59:00",
 
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
@@ -39,7 +44,7 @@ function addYt() {
         content.style.display = "block";
         yt.style.display = "block";
         startFW();
-        addYt();
+        //addYt();
 
         clearInterval(x);
       }
