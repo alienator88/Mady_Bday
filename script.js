@@ -2,8 +2,8 @@ function addYt() {
   document.querySelector('#yt').insertAdjacentHTML(
     'afterbegin',
     `<audio autoplay>
-    <source src="hbd.ogg" type="audio/ogg">
-    </audio>`
+  <source src="hbd.ogg" type="audio/ogg">
+  </audio>`
   )
 }
 
@@ -13,8 +13,8 @@ function addYt() {
     hour = minute * 60,
     day = hour * 24;
 
-  //let birthday = "Jan 25, 2021 14:20:00",
-  let birthday = "Jan 17, 2021 12:59:00",
+  let birthday = "Jan 25, 2021 14:20:00",
+  //let birthday = "Jan 17, 2021 12:59:00",
 
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
