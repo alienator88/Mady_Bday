@@ -1,7 +1,9 @@
 function addYt() {
   document.querySelector('#yt').insertAdjacentHTML(
     'afterbegin',
-    `<iframe src="https://www.youtube-nocookie.com/embed/fTbEpGZyseA?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=0&autoplay=1"  width="10" height="10"  frameborder="0"></iframe>`
+    `<audio autoplay>
+    <source src="hbd.ogg" type="audio/ogg">
+    </audio>`
   )
 }
 
@@ -12,7 +14,7 @@ function addYt() {
     day = hour * 24;
 
   //let birthday = "Jan 25, 2021 14:20:00",
-  let birthday = "Jan 17, 2021 12:40:00",
+  let birthday = "Jan 17, 2021 12:59:00",
 
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
@@ -35,7 +37,7 @@ function addYt() {
         headline.innerText = "Happy Birthday Mady!!!";
         countdown.style.display = "none";
         content.style.display = "block";
-        //yt.style.display = "block";
+        yt.style.display = "block";
         startFW();
         addYt();
 
