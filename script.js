@@ -11,8 +11,8 @@ function addYt() {
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "Jan 25, 2021 14:20:00",
-  //let birthday = "Jan 17, 2021 12:21:00",
+  //let birthday = "Jan 25, 2021 14:20:00",
+  let birthday = "Jan 17, 2021 12:40:00",
 
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
