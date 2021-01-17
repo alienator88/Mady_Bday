@@ -62,6 +62,11 @@
     display: none;
     padding: 1rem;
   }
+
+  #yt {
+    display: none;
+    padding: 1rem;
+  }
   
   .emoji {
     padding: 0 .25rem;
@@ -88,12 +93,3 @@
     top: 50%;
     transform: translate(-50%, -50%);  
   }
-
-.audiobtn {
-  background: none;
-  border: none;
-  position: absolute;
-    left: 1%;
-    top: 1%;
-    transform: translate(-1%, -1%);  
-}
